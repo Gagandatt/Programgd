@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Notification stuff starts here */
+.notification-bell {
+    position: absolute;
+    right: 0px;
+  }
+  
+  .dropdown-menu-notify {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    max-height: 400px;
+    top: 60px;
+    right: -1px;
+    left: unset;
+    width: 460px;
+    box-shadow: 0px 5px 7px -1px #c1c1c1;
+    padding-bottom: 0px;
+    padding: 0px;
+  }
+  
+  ul ul a {
+    background: transparent;
+  
+  }
+  
+  .dropdown-menu-notify:before {
+    content: "";
+    position: absolute;
+    top: -20px;
+    right: 12px;
+    border: 10px solid white;
+    border-color: transparent transparent white transparent;
+  }
+  
+  
+  
+  .head-notify {
+    padding: 5px 15px;
+    border-radius: 3px 3px 0px 0px;
+  }
+  
+  .footer-notify {
+    padding: 5px 15px;
+    border-radius: 0px 0px 3px 3px;
+  }
+  
+  .notification-box-notify {
+    padding: 10px 0px;
+  }
+  
+  .bg-gray-notify {
+    background-color: #eee;
+  }
+  
+  @media (max-width: 640px) {
+    .dropdown-menu-notify {
+      top: 50px;
+      left: -16px;
+      width: 290px;
+    }
+  
+    .nav-notify {
+      display: block;
+    }
+  
+    .nav-notify .nav-item-notify,
+    .nav-notify .nav-item-notify a {
+      padding-left: 0px;
+    }
+  
+    .message-notify {
+      font-size: 13px;
+    }
+  } 
+  
+  /* Notification stuff ends here */
+  
+  /* logo on the navbar */
+  .brandLogo{
+    max-width: 42px;
+  }
+  
+  .main-container{
+    min-height: 80vh;
+  }
+.container h3{
+  font-size: 35px; font-weight: 200; letter-spacing: 3px;
+  text-shadow: 1px 1px 2px black;
+}
+.container h1{
+  margin: 30px 0 20px 0;
+  font-size: 55px;
+  font-weight: 700;
+  text-shadow: 2px 1px 5px black;
+  /* text-transform: uppercase; */
+}
+.change_content:after{
+  content: '';
+  animation: changetext 8s infinite linear;
+  color: #00b894;
+}
+
+@keyframes changetext{
+  15%{content:" IIITian";}
+  40%{content:" Programmer";}
+  65%{content:" Youtuber";}
+  90%{content:" Web Developer";}
+}
+  
+  /* Footer color */
+  footer  a{
+      color: #b5c7da;
+  }
